@@ -43,7 +43,7 @@ function getIPs(callback){
         optional: [{RtpDataChannels: true}]
     };
 
-    var servers = {iceServers: [{urls: "stun:stun.services.mozilla.com"}]};
+    var servers = {iceServers: [{urls: "stun:stun.l.google.com:19302"}]};
 
     //construct a new RTCPeerConnection
     var pc = new RTCPeerConnection(servers, mediaConstraints);
